@@ -13,3 +13,14 @@ Installation:
   2. $ cd docker_installation_in_5
   3. chmod +x docker_install.sh
   4. ./docker_install.sh
+
+To verify your installation:
+  $ docker images     // you shall not see any images
+  $ docker run hello-world    // this will pull  a hello-world image from docker hub and run it
+  $ docker ps           // hello-world container is running.
+  
+To delete docker:
+  1. stop the container(s)
+  2. delete the container(s)
+  3. delete the images
+  4. $ sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-compose-plugin
