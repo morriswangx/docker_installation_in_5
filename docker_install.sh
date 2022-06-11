@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# update the OS:
+sudo apt-get update
+
 # remove the previous version if any
 sudo apt-get remove docker docker-engine docker.io containerd runc
 # Update the apt package index and install packages to allow apt to use a repository over HTTPS:
